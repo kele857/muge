@@ -1,0 +1,145 @@
+/* 移动端英文版样式 */
+*{
+    margin: 0;
+    padding:0;
+}
+.one{
+    width: 100%;
+    height: 61px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+.one>div{
+    display: flex;
+    align-items: center;
+}
+#section{
+    background-image: url("../img/englishMin/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#section1{
+    background-image: url("../img/chineseMin/back2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#section2{
+    background-image: url("../img/chineseMin/back2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.head,.head1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height:3.15rem;
+    background: url("../img/chineseMin/nav.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9;
+}
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height:3.15rem;
+    background: url("../img/englishMin/usaheader.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9;
+}
+.head a,.head1 a {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 0.94rem;
+}
+.head .icon-logo,.head1 .icon-logo {
+    left: 0;
+    width: 3.6rem;
+    height: 100%;
+}
+.head .btn-query-zige,.head1 .btn-query-zige {
+    right: 2.06rem;
+    width: 1.57rem;
+}
+.head .btn-yuyue,.head1 .btn-yuyue {
+    width: 5.3rem;
+    top: 1rem;
+    right: 0;
+}
+.head .btn-query,.head1 .btn-query {
+    right: 0rem;
+    width: 1.97rem;
+    display: none;
+}
+.contentBack{
+    width: 95%;
+    height: 20rem;
+    margin: 33px auto;
+    background-image: url("../img/englishMin/903ed9e0cda988d9ec7988556641b5e.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.minGame{
+    padding-bottom: 30px;
+}
+.wheelPlanting{
+    width: 85%;
+    margin: 0 auto;
+    height: 16rem;
+}
+.minGameImg1{
+    width: 85%;
+    margin: 0 auto;
+    height: 13rem;
+    padding-left:1.5rem;
+}
+.swiper-container {
+    width: 90%;
+    height: 13rem;
+}
+/* 新闻 */
+.new1{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.new1>div>img{
+    width: 100%;
+    border: 1px solid rgb(88, 187, 226);
+}
+.text{
+    margin-left: 10px;
+}
+.text>span{  
+    width: 83%;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.contentBack>.btn{
+    position: absolute;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    top:18rem;
+    left: 30px;
+}
+.mySwiper1{
+    height: 300px;
+}
+hr{
+    border:1px dashed #a0b8dc;
+    width: 81%;
+    margin-left: 2rem;
+    margin-top:1.5rem;
+}

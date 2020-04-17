@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/information.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="details">
+          <div class="detailsHeader">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="assets/img/chinesePc/log.png" alt="">
+              </a>
+            </div>
+            <div class="middle1"></div>
+            <div class="navigation">
+              <a class="button activ" href="avascript:;">最新</a>
+              <a class="button" href="avascript:;">新闻</a>
+              <a class="button" href="avascript:;">活动</a>
+              <a class="button1" href="avascript:;">公告</a>
+            </div>
+          </div>
+          <div class="detailsContent">
+            <ul>
+              <li>
+                <div onclick="opacity()" class="opacity" v-for="(item,index) in result" :key="index">
+                  <div class="flex">
+                    <div class="ulImg"></div>
+                    <div class="detailsUl">
+                      <div class="title">新闻</div>
+                      <p style="font-size:22px;color:#676a6d;margin: 10px 0;">nbgeberbnerberfrfe</p>
+                      <p style="font-size:16px;color:#676a6d;margin:0">按规范实施</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <li><a href="javascript:;">上一页</a></li>
+            <div class="span">1</div>
+            <li><a href="javascript:;">下一页</a></li>
+          </div>
+        </div>
+        <div class="footer1">
+            <div class="text1">
+                <div class="imgs1">
+                    <img src="assets/img/chinesePc/fppter2.png" alt="">
+                    <img style="margin-left: 30px;" src="assets/img/chinesePc/fppter2.png" alt="">
+                </div>
+                <div>本游戏适合12岁以上的玩家进入。</div>
+                <div>积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。</div>
+                <div>ICP备案：蜀ICP备20001356号-1</div>
+            </div>
+        </div>
+      </div>
+      <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>
+        $(function(){
+        var lid=location.search.split("=")[1];
+        if(lid==undefined){
+            $.ajax({
+              url:`http://manor.wgzy69.com/api/news_list?news_type=${1}&language=${1}&size=${1}&curpage=${1}`,
+                  types:"get",
+                  // data:{types:n},
+                  dataType:"json", 
+                  success:function(result){
+                      var html="";
+                      var lists=result.data;
+                      console.log(lists);
+                  }
+            })          
+          }
+        })
+        //导航栏
+        $(".navigation a").click(function(){
+              $(".navigation a").removeClass("activ");
+              $(this).addClass("activ");
+        })
+        //分页
+        $(".pagination>li>a").click(function(){
+              $(".pagination>li>a").removeClass("back");
+              $(this).addClass("back");
+	      })
+        function opacity(){
+          window.location.href ="/details.html"
+        }
+      </script>
+</body>
+</html>

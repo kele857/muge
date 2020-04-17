@@ -1,0 +1,62 @@
+/* 新闻详情页样式（中+英文） */
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+.details{
+    width: 100%;
+    height: 1630px;
+    background-image: url("../img/chinesePc/newsConsultation.jpg");
+    background-size: 100% 100%;
+}
+.detailsHeader{
+    width: 620px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 315px;
+    padding-bottom: 160px;
+}
+.logo{
+    display: block;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+.middle{
+  width: 509px;
+  height: 153px;
+  background-size: 509px 153px;
+  background-position: -0px -0px;
+  position: absolute;
+  left: 50%;
+  margin-left: -254.5px;
+  top: 120px;
+  background-image: url("../img/chinesePc/ydetails.png");
+  background-repeat: no-repeat;
+}
+.middle1{
+    width: 509px;
+    height: 153px;
+    background-size: 509px 153px;
+    background-position: -0px -0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -254.5px;
+    top: 120px;
+    background-image: url("../img/chinesePc/zdetails.png");
+    background-repeat: no-repeat;
+  }
+.content{
+    width: 50%;
+    height: 1000px;
+    margin: 0 auto;
+}
+.title{
+    width: 50%;
+    margin:0 auto;
+    height: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}

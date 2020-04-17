@@ -1,0 +1,149 @@
+/* 新闻资讯页（中+英文） */
+*{
+    margin:0;
+    padding: 0;
+    text-decoration:none;
+}
+ul,li{
+    margin: 0;
+    padding:0;
+}
+.details{
+    width: 100%;
+    height: 1630px;
+    background-image: url("../img/chinesePc/newsConsultation.jpg");
+    background-size: 100% 100%;
+}
+.detailsHeader{
+    width: 620px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 315px;
+}
+.logo{
+    display: block;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+}
+.middle1{
+    width: 509px;
+    height: 153px;
+    background-size: 509px 153px;
+    background-position: -0px -0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -254.5px;
+    top: 120px;
+    background-image: url("../img/chinesePc/zdetails.png");
+    background-repeat: no-repeat;
+}
+.middle{
+    width: 509px;
+    height: 153px;
+    background-size: 509px 153px;
+    background-position: -0px -0px;
+    position: absolute;
+    left: 50%;
+    margin-left: -254.5px;
+    top: 120px;
+    background-image: url("../img/chinesePc/ydetails.png");
+    background-repeat: no-repeat;
+}
+.navigation>.activ{
+    background-color: #61c2da !important;
+    color:#fff !important;
+}
+.navigation{
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation>.button{
+    display: block;
+    width: 99px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: #61c2da;
+    background: #fff;
+    font-size: 22px;
+    border-radius: 33px;
+    border: 1px solid #61c2da;
+    position: relative;
+    line-height: 30px;
+}
+.navigation>.button1{
+    display: block;
+    width: 99px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    color: #61c2da;
+    background: #fff;
+    font-size: 22px;
+    border-radius: 33px;
+    border: 1px solid #61c2da;
+    position: relative;
+    line-height: 30px;
+}
+.navigation>.button::after {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 9px;
+    background-image: url("../img/chinesePc/line.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5px;
+    right: -74px;
+    border:none;
+}
+.flex{
+    width: 1168px;
+    height: 160px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.opacity{
+    width: 100%;
+}
+.opacity:hover{
+    width: 100%;
+    background-image: url("../img/chinesePc/background1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.detailsContent{
+    margin-top: 150px;
+    height: 800px;
+}
+.detailsUl{
+    margin-left: 70px;
+}
+li{
+    list-style-type:none;
+}
+.ulImg{
+    background-image: url("../img/chinesePc/lianxi.jpg");
+    background-repeat: no-repeat;
+
+    width: 311px;
+    height: 112px;
+    background-size: 184px 112px;
+}
+.title{
+    display: block;
+    width: 65px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #3479ab;
+    background: #fff;
+    border: 1px solid #dce7f7;
+    border-radius: 22px;
+    margin-bottom: 10px;
+}

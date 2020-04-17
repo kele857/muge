@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/informationMin.css">
+</head>
+<body>
+    <div>
+        <div class="head">
+            <div class="headtext">
+                <div style="display: flex;margin-left:5px;">
+                    <a href="./chineseMin.html">
+                        <img class="logo" src="assets/img/chineseMin/4177.png" alt="">
+                    </a>
+                    <div class="typeface">
+                        <h3>物格庄园</h5>
+                        <div style="font-size:12px;margin-top:5px;">物格世界</div>
+                    </div>
+                </div>
+                <a href="http://download.wgzy69.com/static/apk/wuge.apk">
+                    <img class="download" src="assets/img/chineseMin/btn_gw_7abfb48.png" alt="">
+                </a>
+            </div>
+            <div class="return">
+                <a href="./chineseMin.html">
+                    <img src="assets/img/chineseMin/return.png" alt="">
+                </a>
+                <ul>
+                    <li class="clickcolor">最新</li>
+                    <li>新闻</li>
+                    <li>公告</li>
+                    <li>活动</li>
+                </ul>
+            </div>
+            <div class="newcontent">
+                <div class="newback">新闻</div>
+                <div class="title">
+                    <div class="one">码链与量子计算，5G信息爆炸时代的历史性抉择</div>
+                    <div class="time">2020.4.16</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(".return>ul>li").click(function(){
+              $(".return>ul>li").removeClass("clickcolor");
+              $(this).addClass("clickcolor");
+        })
+        function retu(){
+            window.location.href="/chineseMin.html"
+        }
+    </script>
+</body>
+</html>

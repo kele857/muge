@@ -1,0 +1,78 @@
+/* 轮播 */
+#featured-area {
+    height: 337px;
+    width: 90%;
+    margin: 200px auto;
+}
+
+.roundabout-holder {
+    list-style: none;
+    width: 85%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.roundabout-moveable-item {
+    font-size: 12px!important;
+    height: 521px;
+    width: 906px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.roundabout-moveable-item img {
+    height: 100%;
+    width: 100%;
+    margin: 0
+}
+
+.roundabout-in-focus {
+    cursor: auto
+}
+
+.roundabout-holder span {
+    display: none
+}
+
+.roundabout-in-focus:hover span {
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 8px 20px;
+    background: #f9f9f9;
+    color: #36c;
+    z-index: 999;
+    -moz-border-radius-topleft: 5px;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa
+}
+
+.roundabout a:active,
+.roundabout a:focus,
+.roundabout a:visited {
+    outline: 0;
+    text-decoration: none
+}
+
+.roundabout li {
+    margin: 0
+}
+.img_div{
+    width: 90%;
+    /* margin: 0 auto; */
+    height: 800px;
+    padding-top:140px;
+}
+@media screen and (min-width:768px) and (max-width:1466px){
+    .roundabout-moveable-item {
+        height: 364px;
+        width: 634px;
+    }
+    .img_div{
+        padding-top:1px;
+    }
+    #featured-area {
+        margin: 244px auto;
+    }
+  }

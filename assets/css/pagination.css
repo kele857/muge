@@ -1,0 +1,33 @@
+/* 分页 */
+.pagination{
+    width: 300px;
+    padding-top:150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.pagination>.span{
+    margin:0 10px;
+    padding:3px 9px;
+    color: #2b34bb;
+    border:1px solid #2b34bb;
+    border-radius: 5px;
+}
+.pagination>li>a{
+    color: #aaaaaa;
+    border:1px solid #aaaaaa;
+    padding:3px 9px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+}
+.pagination>li>a{
+    color: #aaaaaa;
+}
+.pagination>li>.back{
+    color: #fff !important;
+    border: 1px solid #fff !important;
+    background-color: #2b34bb;
+    border-radius: 5px;
+}

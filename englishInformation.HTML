@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/information.css">
+    <link rel="stylesheet" href="assets/css/pagination.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="details">
+          <div class="detailsHeader">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="assets/img/chinesePc/log.png" alt="">
+              </a>
+            </div>
+            <div class="middle"></div>
+            <div class="navigation">
+              <a class="button activ" href="avascript:;">Newest</a>
+              <a style="width: 135px;" class="button" href="avascript:;">Journalism</a>
+              <a class="button" href="avascript:;">activity</a>
+              <a class="button1" href="avascript:;">Notice</a>
+            </div>
+          </div>
+          <div class="detailsContent">
+            <ul>
+              <li>
+                <div onclick="opacity()" class="opacity" v-for="(item,index) in result" :key="index">
+                  <div class="flex">
+                    <div class="ulImg"></div>
+                    <div class="detailsUl">
+                      <div style="width: 100px;" class="title">Journalism</div>
+                      <p style="font-size:22px;color:#676a6d;margin: 10px 0;">nbgeberbnerberfrfe</p>
+                      <p style="font-size:16px;color:#676a6d;margin:0">按规范实施</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pagination">
+            <li><a href="javascript:;">Previous page</a></li>
+            <div class="span">one</div>
+            <li><a href="javascript:;">next page</a></li>
+          </div>
+        </div>
+        <div class="footer1">
+            <div class="text1">
+                <div class="imgs1">
+                    <img src="assets/img/chinesePc/fppter1.png" alt="">
+                    <img style="margin-left: 30px;" src="assets/img/chinesePc/fppter1.png" alt="">
+                </div>
+                <div>This game is suitable for players over 12 years old.</div>
+                <div>A positive and healthy game mentality is the beginning of a healthy game. The plot of this game is set compactly. Please control the game time reasonably, avoid addicting to the game and affecting your life, pay attention to self-protection and prevent network traps.</div>
+                <div>ICP record: shuicpb20001356-1</div>
+            </div>
+        </div>
+      </div>
+      <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+      <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script>
+        $(".navigation a").click(function(){
+              $(".navigation a").removeClass("activ");
+              $(this).addClass("activ");
+        })
+        $(".pagination>li>a").click(function(){
+              $(".pagination>li>a").removeClass("back");
+              $(this).addClass("back");
+	      })
+        function opacity(){
+          window.location.href ="/englishDetails.html"
+        }
+      </script>
+</body>
+</html>
